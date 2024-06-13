@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+
+import { Courier_Prime } from "next/font/google";
 
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({ subsets: ["latin"] });
+const courier = Courier_Prime({
+  weight:"400",
+  subsets: ["latin"]})
 
 export const metadata: Metadata = {
   title: "Kroma",
@@ -17,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt">
-      <body className={inter.className}>
+      <body className={courier.className}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           {children}
         </ThemeProvider>
