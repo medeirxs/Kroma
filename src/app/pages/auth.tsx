@@ -7,7 +7,7 @@ import { Label } from "@radix-ui/react-label";
 import { SiAdobeaftereffects, SiAdobephotoshop, SiAdobepremierepro, SiBehance, SiCinema4D, SiDavinciresolve } from "react-icons/si";
 import { GrGoogle, GrTwitter } from "react-icons/gr";
 
-export default function Auth(){
+export function Auth(){
   return(
     <div className="grid justify-center items-center h-screen">
       <div>
