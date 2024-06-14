@@ -1,14 +1,15 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { PackContainer } from "@/components/pack-container"
 
 import { HiOutlineSquares2X2 } from "react-icons/hi2"
 import { FaDownload, FaUser } from "react-icons/fa6"
 import { RiArchiveDrawerFill } from "react-icons/ri"
 import { BsFillCameraVideoFill, BsSearch } from "react-icons/bs"
-import { FaStar, FaUserAlt } from "react-icons/fa"
+import { FaStar } from "react-icons/fa"
 import { RiSettings4Fill } from "react-icons/ri"
-import { GrHelp, GrUser } from "react-icons/gr"
+import { GrUser } from "react-icons/gr"
 import { MdExitToApp, MdHelpOutline } from "react-icons/md"
 
 export function Homepage(){
@@ -83,8 +84,6 @@ export function Homepage(){
             </div>
           </div>
 
-
-
           <Button variant="secondary" className="flex items-center w-full mt-12 bg-zinc-900 bg-gradient-to-l from-zinc-950">
               <span>Kroma Producer &copy; 2024</span>
             </Button>
@@ -92,86 +91,23 @@ export function Homepage(){
 
         <div className="pt-6">
           <div className="bg-zinc-900 bg-gradient-to-t rounded-xl from-zinc-950 pt-3 pl-8 pr-8 w-[1024px] h-screen">
-            <div className="flex flex-row justify-between border-b p-2">
-              <span className="text-muted-foreground cursor-pointer">Kroma/<span className="text-white">Packs</span></span>
-              <BsSearch/>
+
+            <div className="border-b border-muted p-2 flex justify-between">
+              <span className="text-muted-foreground">Kroma/
+                <span className="text-white">Packs</span>
+              </span>
+
+              <BsSearch className=" cursor-pointer"/>
             </div>
-              <div className="flex flex-col">
-                <div className="grid grid-cols-4 h-72 space-x-4 pt-4">
-                    <div className="bg-zinc-800/40 drop-shadow-xl rounded-xl hover:scale-105 transition-all">
-                      <div className="p-3 space-y-2">
-                        <img className="rounded-lg"
-                          src="https://cdn.discordapp.com/attachments/1200954794563612724/1203094654933799012/image.png?ex=666c11f6&is=666ac076&hm=ed98fe076fe44e42793916331dcf54200a84f735591b4f85d2e36c268cce9809&" alt="" />
-                        <div>
-                          <Badge className="text-center rounded-xl text-xs h-6 bg-muted text-muted-foreground">Photoshop</Badge>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Avatar className=" w-5 h-5">
-                            <AvatarImage src="https://i.pinimg.com/564x/65/c0/76/65c076b5ab3d89dabc95481e01e18772.jpg" />
-                            <AvatarFallback>MM</AvatarFallback>
-                          </Avatar>
-                          <div>
-                            <span className="text-xs text-muted-foreground">Autor/<span className="text-white">Matheus Medeiros</span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-zinc-800/40 drop-shadow-xl rounded-xl hover:scale-105 transition-all">
-                      <div className="p-3 space-y-2">
-                        <img className="rounded-lg"
-                          src="https://cdn.discordapp.com/attachments/1200954794563612724/1203094654933799012/image.png?ex=666c11f6&is=666ac076&hm=ed98fe076fe44e42793916331dcf54200a84f735591b4f85d2e36c268cce9809&" alt="" />
-                        <div>
-                          <Badge className="text-center rounded-xl text-xs h-6 bg-muted text-muted-foreground">Photoshop</Badge>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Avatar className=" w-5 h-5">
-                            <AvatarImage src="https://i.pinimg.com/564x/65/c0/76/65c076b5ab3d89dabc95481e01e18772.jpg" />
-                            <AvatarFallback>MM</AvatarFallback>
-                          </Avatar>
-                          <div>
-                            <span className="text-xs text-muted-foreground">Autor/<span className="text-white">Matheus Medeiros</span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-zinc-800/40 drop-shadow-xl rounded-xl hover:scale-105 transition-all">
-                      <div className="p-3 space-y-2">
-                        <img className="rounded-lg"
-                          src="https://cdn.discordapp.com/attachments/1200954794563612724/1203094654933799012/image.png?ex=666c11f6&is=666ac076&hm=ed98fe076fe44e42793916331dcf54200a84f735591b4f85d2e36c268cce9809&" alt="" />
-                        <div>
-                          <Badge className="text-center rounded-xl text-xs h-6 bg-muted text-muted-foreground">Photoshop</Badge>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Avatar className=" w-5 h-5">
-                            <AvatarImage src="https://i.pinimg.com/564x/65/c0/76/65c076b5ab3d89dabc95481e01e18772.jpg" />
-                            <AvatarFallback>MM</AvatarFallback>
-                          </Avatar>
-                          <div>
-                            <span className="text-xs text-muted-foreground">Autor/<span className="text-white">Matheus Medeiros</span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-zinc-800/40 drop-shadow-xl rounded-xl hover:scale-105 transition-all">
-                      <div className="p-3 space-y-2">
-                        <img className="rounded-lg"
-                          src="https://cdn.discordapp.com/attachments/1200954794563612724/1203094654933799012/image.png?ex=666c11f6&is=666ac076&hm=ed98fe076fe44e42793916331dcf54200a84f735591b4f85d2e36c268cce9809&" alt="" />
-                        <div>
-                          <Badge className="text-center rounded-xl text-xs h-6 bg-muted text-muted-foreground">Photoshop</Badge>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Avatar className=" w-5 h-5">
-                            <AvatarImage src="https://i.pinimg.com/564x/65/c0/76/65c076b5ab3d89dabc95481e01e18772.jpg" />
-                            <AvatarFallback>MM</AvatarFallback>
-                          </Avatar>
-                          <div>
-                            <span className="text-xs text-muted-foreground">Autor/<span className="text-white">Matheus Medeiros</span></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
+            
+            <div className="grid grid-cols-4 gap-5 mt-4">
+              <PackContainer name="Pack Brush" description="varias pincelada" creator="/Marcelle Brito"
+              bg="https://i.pinimg.com/564x/5f/4d/ee/5f4dee78d14c18290aa5810ac743e539.jpg" icon="https://i.pinimg.com/564x/56/6d/e9/566de9e4a67d63ab5f90f0348dda6849.jpg"/>
+
+              <PackContainer name="Pack Nuvem" description="algodao doce" creator="/Matheus Medeiros"
+              bg="https://i.pinimg.com/736x/a9/91/e0/a991e0ed50c34c5a53d65478b94edea0.jpg" icon="https://i.pinimg.com/564x/8c/6e/16/8c6e169a42578a693cfadcf389bbefbb.jpg"/>
+            </div>
+            
           </div>
         </div>
       </div>

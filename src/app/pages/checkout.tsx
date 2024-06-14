@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@radix-ui/react-checkbox";
 
 import { BsCreditCard } from "react-icons/bs";
 import { FaPix } from "react-icons/fa6";

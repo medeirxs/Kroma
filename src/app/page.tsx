@@ -5,7 +5,7 @@ import { Checkout } from "./pages/checkout"
 export default function Home() {
   return (
       <>
-        <Checkout/>
+        <Homepage/>
       </>
     );
 }
