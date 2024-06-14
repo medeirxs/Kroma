@@ -1,3 +1,7 @@
+'use client'
+
+
+
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -107,7 +111,7 @@ export function Homepage(){
               <PackContainer name="Pack Nuvem" description="algodao doce" creator="/Matheus Medeiros"
               bg="https://i.pinimg.com/736x/a9/91/e0/a991e0ed50c34c5a53d65478b94edea0.jpg" icon="https://i.pinimg.com/564x/8c/6e/16/8c6e169a42578a693cfadcf389bbefbb.jpg"/>
             </div>
-            
+
           </div>
         </div>
       </div>

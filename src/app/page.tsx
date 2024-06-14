@@ -1,11 +1,13 @@
+'use client'
+
 import { Auth } from "./pages/auth";
+import { Checkout } from "./pages/checkout";
 import { Homepage } from "./pages/homepage";
-import { Checkout } from "./pages/checkout"
 
 export default function Home() {
   return (
       <>
-        <Homepage/>
+        <Checkout/>
       </>
     );
 }
